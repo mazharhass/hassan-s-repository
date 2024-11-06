@@ -28,3 +28,17 @@ class Student(Person):
     self.grade = grade
 
 class Teacher(Person):
+  def __init__(self, name, address, employee_id: int, subject: str):
+    super().__init__(name, address)
+  def get_employee_id() -> int:
+    return self.employee_id
+  def get_subject() -> str:
+    return self.subject
+  def set_employee_id(employee_id: int):
+    self.employee_id = employee_id
+  def set_subject(subject: str):
+    self.subject = subject
+s1 = Student(¨Charlie Brown¨, ¨12 Cherry St, Lee´s Summit¨, 293, 11)
+t1 = Teacher(¨Scott Wilson¨, ¨234 Mission Rd, Lee´s Summit¨, 82, Python)
+t1.set_subject(¨Math¨)
+print(t1.subject)
